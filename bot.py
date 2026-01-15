@@ -117,10 +117,11 @@ async def score(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 # ---------- APP ----------
-app = ApplicationBuilder().token(TOKEN).build()
+app = ApplicationBuilder().token(8272217371:AAFphJGvl-X2E3uJRx0gSXIJAuG7Q5vgUMs).build()
 
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(button))
 app.add_handler(CommandHandler("score", score))
 
 app.run_polling()
+
