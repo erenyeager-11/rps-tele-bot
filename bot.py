@@ -5,7 +5,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CallbackQueryHandler, CommandHandler, ContextTypes
 import random
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = "8272217371:AAFphJGvl-X2E3uJRx0gSXIJAuG7Q5vgUMs"
 # Data storage (chat_id + topic_id based)
 choices = {}   # {(chat_id, topic_id): {user_id: choice}}
 scores = {}    # {(chat_id, topic_id): {user_id: points}}
@@ -122,5 +122,6 @@ app.add_handler(CallbackQueryHandler(button))
 app.add_handler(CommandHandler("score", score))
 
 app.run_polling()
+
 
 
